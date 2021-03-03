@@ -663,17 +663,17 @@ a.demo--current {
 
 .shape-overlays__path:nth-of-type(1) {
 	/*fill: var(--path-fill-1);*/
-	fill: #A6979C;
+	fill: #9B2B26;
 }
 
 .shape-overlays__path:nth-of-type(2) {
 	/*fill: var(--path-fill-2);*/
-	fill: #BCE1E1;
+	fill: #AF382C;
 }
 
 .shape-overlays__path:nth-of-type(3) {
 	/*fill: var(--path-fill-3);*/
-	fill: #2D2F44;
+	fill: #D24D39;
 }
 
 .shape-overlays__path:nth-of-type(4) {
@@ -775,7 +775,7 @@ a.demo--current {
 	position: absolute;
 	top: 0;
 	/*background-color: var(--button-line);*/
-	background-color: #D24D39;
+	background-color: #fff;
 }
 
 .hamburger__line-in::before {
