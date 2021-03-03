@@ -37,14 +37,20 @@ $('section.slider-bumming .info-slider h2:nth-child(2)').hover(function(){
 		'color': '#D24D39',
 	});
 
-	$('.one-img').animate({opacity: '0'}, 300, function() {
-		$('.one-img').css('display', 'none');
-		$('.two-img').css({'opacity': '1', 'left': '0'});
-		$('.two-img').fadeToggle();
-	});
+	$('.one-img').fadeOut();
+	$('.two-img').fadeIn();
+
+	// $('.one-img').animate({opacity: '0'}, 100, function() {
+	// 	$('.one-img').css('display', 'none');
+	// 	$('.two-img').css({'opacity': '1'});
+	// 	$('.two-img').fadeToggle();
+	// });
 
 
 }, function(){
+
+
+
     $(this).css('letter-spacing', '0');
     $(this).removeClass('cambio');
 	$(this).prev().css({
@@ -52,9 +58,12 @@ $('section.slider-bumming .info-slider h2:nth-child(2)').hover(function(){
 		'color': '#000',
 	});
 
-	$('.two-img').animate({opacity: '0'}, 300, function() {
-		$('.two-img').css('display', 'none');
-		$('.one-img').css({'opacity': '1', 'left': '0'});
-		$('.one-img').fadeToggle();
-	});
+	$('.one-img').fadeIn();
+	$('.two-img').fadeOut();
+
+	// $('.two-img').animate({opacity: '0'}, 100, function() {
+	// 	$('.two-img').css('display', 'none');
+	// 	$('.one-img').css({'opacity': '1'});
+	// 	$('.one-img').fadeToggle();
+	// });
 });
