@@ -775,7 +775,7 @@ a.demo--current {
 	position: absolute;
 	top: 0;
 	/*background-color: var(--button-line);*/
-	background-color: #fff;
+	background-color: #D24D39;
 }
 
 .hamburger__line-in::before {

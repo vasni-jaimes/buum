@@ -37,10 +37,10 @@ $('section.slider-bumming .info-slider h2:nth-child(2)').hover(function(){
 		'color': '#D24D39',
 	});
 
-	$('.one-img').animate({left: '-200px', opacity: '0'}, 500, function() {
+	$('.one-img').animate({opacity: '0'}, 300, function() {
 		$('.one-img').css('display', 'none');
 		$('.two-img').css({'opacity': '1', 'left': '0'});
-		$('.two-img').slideToggle();
+		$('.two-img').fadeToggle();
 	});
 
 
@@ -52,9 +52,9 @@ $('section.slider-bumming .info-slider h2:nth-child(2)').hover(function(){
 		'color': '#000',
 	});
 
-	$('.two-img').animate({left: '-200px', opacity: '0'}, 500, function() {
+	$('.two-img').animate({opacity: '0'}, 300, function() {
 		$('.two-img').css('display', 'none');
 		$('.one-img').css({'opacity': '1', 'left': '0'});
-		$('.one-img').slideToggle();
+		$('.one-img').fadeToggle();
 	});
 });
