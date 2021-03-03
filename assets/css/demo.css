@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'Helvetica 65 Medium';
+    src: url('../fonts/HelveticaNeue-Medium.woff2') format('woff2'),
+         url('../fonts/HelveticaNeue-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica 55 Roman';
+    src: url('../fonts/HelveticaNeue-Roman.woff2') format('woff2'),
+         url('../fonts/HelveticaNeue-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 *,
 *::after,
 *::before {
@@ -378,7 +396,7 @@ a.demo--current {
 }
 
 .global-menu__item--demo-3 {
-	font-family: 'Graphik';
+	font-family: 'Helvetica 65 Medium';
 	transition: transform 0.1s, opacity 0.1s;
 	transform: translateY(100%);
 	transition-timing-function: ease-out;
