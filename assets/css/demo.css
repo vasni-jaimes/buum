@@ -796,6 +796,20 @@ a.demo--current {
 	background-color: #D24D39;
 }
 
+.hamburger__line-in--cross01::before,
+.hamburger__line-in--cross02::before,
+.hamburger__line-in--cross01::after,
+.hamburger__line-in--cross02::after {
+	width: 28px;
+	height: 2px;
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	background-color: #fff;
+}
+
+
 .hamburger__line-in::before {
 	left: -56px;
 }

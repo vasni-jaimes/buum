@@ -27,8 +27,7 @@ if (itemMenu) {
 
 
 
-//EFECTO HOME
-
+//EFECTO HOME SPRINNG
 $('section.slider-bumming .info-slider h2:nth-child(2)').hover(function(){
 	$(this).css('letter-spacing', '25px');
 	$(this).addClass('cambio');
@@ -37,19 +36,10 @@ $('section.slider-bumming .info-slider h2:nth-child(2)').hover(function(){
 		'color': '#D24D39',
 	});
 
-	$('.one-img').fadeOut();
-	$('.two-img').fadeIn();
-
-	// $('.one-img').animate({opacity: '0'}, 100, function() {
-	// 	$('.one-img').css('display', 'none');
-	// 	$('.two-img').css({'opacity': '1'});
-	// 	$('.two-img').fadeToggle();
-	// });
-
+	$('figure.one-img').fadeOut();
+	$('figure.two-img').fadeIn();
 
 }, function(){
-
-
 
     $(this).css('letter-spacing', '0');
     $(this).removeClass('cambio');
@@ -58,12 +48,104 @@ $('section.slider-bumming .info-slider h2:nth-child(2)').hover(function(){
 		'color': '#000',
 	});
 
-	$('.one-img').fadeIn();
-	$('.two-img').fadeOut();
-
-	// $('.two-img').animate({opacity: '0'}, 100, function() {
-	// 	$('.two-img').css('display', 'none');
-	// 	$('.one-img').css({'opacity': '1'});
-	// 	$('.one-img').fadeToggle();
-	// });
+	$('figure.one-img').fadeIn();
+	$('figure.two-img').fadeOut();
 });
+
+
+//EFECTO HOME SUMMER
+$('section.slider-bumming .info-slider ul li.summer').hover(function(){
+	let hh2 = $('section.slider-bumming .info-slider h2:nth-child(2)');
+
+	hh2.text("SUMMER");
+	hh2.css('letter-spacing', '25px');
+	hh2.addClass('cambio');
+	hh2.prev().css({
+		'letterSpacing': '25px',
+		'color': '#D24D39',
+	});
+
+	$('figure.one-img').fadeOut();
+	$('figure.summer').fadeIn();
+}, function(){
+	let hh2 = $('section.slider-bumming .info-slider h2:nth-child(2)');
+
+	hh2.text("SPRING");
+    hh2.css('letter-spacing', '0');
+    hh2.removeClass('cambio');
+	hh2.prev().css({
+		'letterSpacing': '0',
+		'color': '#000',
+	});
+
+	$('figure.one-img').fadeIn();
+	$('figure.summer').fadeOut();
+});
+
+
+
+
+//EFECTO HOME FALL
+$('section.slider-bumming .info-slider ul li.fall').hover(function(){
+	let hh2 = $('section.slider-bumming .info-slider h2:nth-child(2)');
+
+	hh2.text("FALL");
+	hh2.css('letter-spacing', '25px');
+	hh2.addClass('cambio');
+	hh2.prev().css({
+		'letterSpacing': '25px',
+		'color': '#D24D39',
+	});
+
+	$('figure.one-img').fadeOut();
+	$('figure.fall').fadeIn();
+}, function(){
+	let hh2 = $('section.slider-bumming .info-slider h2:nth-child(2)');
+
+	hh2.text("SPRING");
+    hh2.css('letter-spacing', '0');
+    hh2.removeClass('cambio');
+	hh2.prev().css({
+		'letterSpacing': '0',
+		'color': '#000',
+	});
+
+	$('figure.one-img').fadeIn();
+	$('figure.fall').fadeOut();
+});
+
+
+
+//EFECTO HOME WINTER
+$('section.slider-bumming .info-slider ul li.winter').hover(function(){
+	let hh2 = $('section.slider-bumming .info-slider h2:nth-child(2)');
+
+	hh2.text("WINTER");
+	hh2.css('letter-spacing', '25px');
+	hh2.addClass('cambio');
+	hh2.prev().css({
+		'letterSpacing': '25px',
+		'color': '#D24D39',
+	});
+
+	$('figure.one-img').fadeOut();
+	$('figure.winter').fadeIn();
+}, function(){
+	let hh2 = $('section.slider-bumming .info-slider h2:nth-child(2)');
+
+	hh2.text("SPRING");
+    hh2.css('letter-spacing', '0');
+    hh2.removeClass('cambio');
+	hh2.prev().css({
+		'letterSpacing': '0',
+		'color': '#000',
+	});
+
+	$('figure.one-img').fadeIn();
+	$('figure.winter').fadeOut();
+});
+
+
+
+
+

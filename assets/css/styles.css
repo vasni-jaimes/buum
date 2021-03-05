@@ -50,7 +50,7 @@ figure img {
 
 
 .container {
-	max-width: 1500px;
+	max-width: 1600px;
 	margin: auto;
 }
 
@@ -249,15 +249,16 @@ section.slider-bumming .info-slider h2:first-child {
 section.slider-bumming .info-slider h2:nth-child(2) {
 	cursor: pointer;
 	margin-bottom: 35px;
+	display: inline-block;
 }
 
 section.slider-bumming .info-slider h2:nth-child(2)::before {
-	content: 'NEW';
+	content: 'COMING SOON';
 	position: absolute;
 	top: -50px;
 	left: 0px;
 	height: 40px;
-	width: 120px;
+	width: 320px;
 	background: #000;
 
 	color: #FFF;
@@ -300,6 +301,13 @@ section.slider-bumming .container .imagen-slider figure {
 	max-width: 500px;
 }
 
+section.slider-bumming .container .imagen-slider figure.one-img {
+	opacity: 0.3;
+}
+
+section.slider-bumming .container .imagen-slider figure.summer,
+section.slider-bumming .container .imagen-slider figure.fall,
+section.slider-bumming .container .imagen-slider figure.winter,
 section.slider-bumming .container .imagen-slider figure.two-img {
 	display: none;
 }
@@ -317,6 +325,7 @@ section.slider-bumming .info-slider ul li {
 	letter-spacing: 4.5px;
 	line-height: 21px;
 	text-align: justify;
+	cursor: pointer;
 }
 
 section.slider-bumming .info-slider ul li.list-sum {
@@ -324,7 +333,7 @@ section.slider-bumming .info-slider ul li.list-sum {
 }
 
 section.slider-bumming {
-	margin-bottom: 400px;
+	margin-bottom: 550px;
 }
 
 
@@ -360,7 +369,7 @@ section.programs .container h2 {
 section.programs .container .titulo-programs figure {
 	width: 60%;
 	position: absolute;
-	top: -320px;
+	top: -405px;
 	right: 0;
 }
 
@@ -405,6 +414,7 @@ footer .img-info_contacto {
 
 footer .img-info_contacto figure {
 	position: relative;
+	padding-top: 8px;
 }
 
 
@@ -438,11 +448,22 @@ footer .info-contacto div {
 }
 
 footer .info-contacto div figure  {
-	margin-right: 20px;
+	margin-right: 60px;
+	width: 75px;
 }
 
-footer .info-contacto div figure img {
-	width: 60%;
+footer .info-contacto div.ig-contact a {
+	letter-spacing: 8px;
+} 
+
+
+footer .info-contacto div span {
+	margin-right: 70px;
+}
+
+
+footer .info-contacto div span {
+	color: #D24D39;
 }
 
 footer .info-contacto div a {
@@ -477,19 +498,97 @@ footer .img-info_contacto .banda-social p {
 }
 
 
-.social span {
-	color: #fff;
-	margin-right: 10px;
+
+
+
+
+/************** SUMMER PAGE ************/
+
+section.titulo-estacion {
+	margin-top: 200px;
+	margin-bottom: 100px;	
+}
+
+section.titulo-estacion .container {
+	padding-left: 130px;
+}
+
+section.titulo-estacion div.description {
+	width: 50%;
+}
+
+section.titulo-estacion div.description h2 {
+	color: #000;
+	font-family: "Helvetica 55 Roman";
+	font-size: 48px;
+	letter-spacing: 25px;
+	line-height: 71px;
+}
+
+section.titulo-estacion div.titulo {
+	width: 50%;
 }
 
 
+section.titulo-estacion div.titulo h1::before {
+	content: '';
+	position: absolute;
+	top: -50px;
+	left: 0px;
+	height: 35px;
+  	width: 75%;
+	background: #CF412B;
+}
+
+section.titulo-estacion div.titulo h1 {
+	/*color: #CF412B;*/
+	font-family: "Helvetica 65 Medium";
+	font-size: 60px;
+	letter-spacing: 24.5px;
+	line-height: 115px;
+	text-align: justify;
+	position: relative;
+}
 
 
+section.titulo-estacion div.titulo p {
+	color: #000;
+	font-family: "Helvetica 55 Roman";
+	font-size: 25px;
+	line-height: 40px;
+}
+
+section.imagen-estacion {
+	margin-bottom: 300px;
+}
+
+section.imagen-estacion figure {
+	margin: 0 auto;
+}
+
+
+/************** SUMMER PAGE \ ************/
 
 
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
 	section.programs .container div.imagenes-programs figure {
 		margin-bottom: 40px;
+	}
+
+	section.programs .container .titulo-programs figure {
+		top: -290px;
+	}
+
+	footer .info-contacto div a {
+		font-size: 25px;
+	}
+
+	footer .info-contacto div.ig-contact a {
+		letter-spacing: 5px;
+	}
+
+	footer .img-info_contacto figure.first {
+		left: 21%;
 	}
 }
 
@@ -498,6 +597,23 @@ footer .img-info_contacto .banda-social p {
 
 	section.programs .container div.imagenes-programs figure {
 		margin-bottom: 40px;
+	}
+
+	section.programs .container .titulo-programs figure {
+		top: -250px;
+	}
+
+	footer .info-contacto div a {
+		font-size: 25px;
+	}
+
+	footer .info-contacto div.ig-contact a {
+		letter-spacing: 5px;
+	}
+
+
+	footer .img-info_contacto figure.first {
+		left: 17%;
 	}
 }
 
@@ -558,6 +674,12 @@ footer .img-info_contacto .banda-social p {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+
+	footer .info-contacto div.ig-contact a {
+		letter-spacing: 5px;
+	}
+
+	
 }
 
 
@@ -727,6 +849,10 @@ footer .img-info_contacto .banda-social p {
 	footer .img-info_contacto .banda-social {
 		padding-left: 20px;
 		padding-right: 20px;
+	}
+
+	footer .info-contacto div.ig-contact a {
+		letter-spacing: 6px;
 	}
 
 }
