@@ -41,6 +41,7 @@ p, a {
 figure img {
 	width: 100%;
 	height: auto;
+	display: table;
 }
 
 
@@ -253,12 +254,12 @@ section.slider-bumming .info-slider h2:nth-child(2) {
 }
 
 section.slider-bumming .info-slider h2:nth-child(2)::before {
-	content: 'COMING SOON';
+	content: 'NEW';
 	position: absolute;
 	top: -50px;
 	left: 0px;
 	height: 40px;
-	width: 320px;
+	width: 130px;
 	background: #000;
 
 	color: #FFF;
@@ -273,8 +274,8 @@ section.slider-bumming .info-slider h2:nth-child(2)::before {
 
 section.slider-bumming .info-slider h2.cambio::before {
 	background: #D24D39;
-	width: 83%;
-	content: '';
+	width: 90%;
+	content: 'COMING SOON';
 }
 
 
@@ -414,7 +415,6 @@ footer .img-info_contacto {
 
 footer .img-info_contacto figure {
 	position: relative;
-	padding-top: 8px;
 }
 
 
@@ -479,7 +479,7 @@ footer .img-info_contacto .banda-social {
 	position: absolute;
 	width: 100%;
 	border: 1px solid red;
-	bottom: 60px;
+	bottom: 5px;
 	left: -3px;
 	background: #D24D39;
 	display: flex;
@@ -487,6 +487,11 @@ footer .img-info_contacto .banda-social {
 	align-items: center;
 }
 
+
+footer .img-info_contacto .banda-social figure {
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
 
 
 footer .img-info_contacto .banda-social p {
@@ -559,11 +564,102 @@ section.titulo-estacion div.titulo p {
 }
 
 section.imagen-estacion {
-	margin-bottom: 300px;
+	margin-bottom: 200px;
 }
 
 section.imagen-estacion figure {
 	margin: 0 auto;
+}
+
+section.listado-detail {
+	margin-bottom: 350px;
+}
+
+section.listado-detail div.container {
+	/*background: red*/;
+	display: flex;
+	width: 100%;
+	margin-bottom: 150px;
+}
+
+section.listado-detail div.container div.container-img {
+	width: 50%;
+	padding-bottom: 35px;
+	/*background: pink;*/
+}
+
+section.listado-detail div.container div.conta-viemore {
+	width: 50%;
+}
+
+section.listado-detail div.container figure {
+ 	height: 250.49px;
+	width: 170.67px;
+ 	margin: 0 auto;
+ 	background: #E30613;
+ 	position: relative;
+}
+
+section.listado-detail div.container figure img {
+	height: 120.78px;
+	width: 112.4px;
+ 	position: absolute;
+ 	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+section.listado-detail div.container div.conta-viemore div {
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+section.listado-detail div.container div.conta-viemore div p {
+	color: #FFF;
+	font-family: "Helvetica 55 Roman";
+	font-size: 30px;
+	line-height: 56px;
+	position: relative;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-right: 30px;
+}
+
+section.listado-detail div.container div.conta-viemore div p::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: #D24D39;
+	z-index: -1;
+}
+
+section.listado-detail div.container div.conta-viemore div h2 {
+	color: #000;
+	font-family: "Helvetica 55 Roman";
+	font-size: 67px;
+	letter-spacing: 19px;
+	line-height: 103px;
+}
+
+section.listado-detail div.container div.conta-viemore > p {
+	color: #666;
+	font-family: Verdana;
+	font-size: 16px;
+	line-height: 29px;
+	margin-bottom: 40px;
+}
+
+section.listado-detail div.container div.conta-viemore a {
+	color: #000;
+	font-family: "Helvetica 55 Roman";
+	font-size: 22px;
+	letter-spacing: 5.25px;
+	line-height: 33px;
 }
 
 
@@ -615,6 +711,7 @@ section.imagen-estacion figure {
 	footer .img-info_contacto figure.first {
 		left: 17%;
 	}
+
 }
 
 
@@ -679,6 +776,49 @@ section.imagen-estacion figure {
 		letter-spacing: 5px;
 	}
 
+
+	/********* SECCION **********/
+
+
+	section.slider-bumming {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+
+	section.slider-bumming .container .info-slider {
+		padding: 0;
+		margin-bottom: 70px;
+	}
+
+	section.slider-bumming .info-slider h2:first-child {
+		margin-bottom: 120px;
+	}
+
+
+
+	/************** SUMMER PAGE ************/
+
+	section.titulo-estacion .container {
+		flex-direction: column;
+	}
+
+	section.titulo-estacion div.description {
+		width: 100%;
+		margin-bottom: 100px;
+	}
+
+	section.titulo-estacion div.titulo {
+		width: 100%;
+	}
+
+	section.titulo-estacion div.titulo h1 {
+		display: inline-block;
+	}
+
+	section.titulo-estacion div.description h2 {
+		margin-bottom: 30px;
+	}
 	
 }
 
@@ -854,6 +994,84 @@ section.imagen-estacion figure {
 	footer .info-contacto div.ig-contact a {
 		letter-spacing: 6px;
 	}
+
+
+
+	/************** SUMMER PAGE ************/
+
+	section.titulo-estacion .container {
+		padding: 0;
+		flex-direction: column;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	section.titulo-estacion div.description {
+		width: 100%;
+		margin-bottom: 100px;
+	}
+
+	section.titulo-estacion div.titulo {
+		width: 100%;
+	}
+
+
+	section.titulo-estacion div.description h2 {
+		font-size: 30px;
+		letter-spacing: 20px;
+	}
+
+	section.titulo-estacion div.titulo h1 {
+		font-size: 30px;
+		display: inline-block;
+	}
+
+	section.titulo-estacion div.titulo p {
+		font-size: 16px;
+	}
+
+	section.titulo-estacion div.titulo h1::before {
+		top: 0px;
+		height: 20px;
+	}
+
+	section.imagen-estacion div.container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+
+	section.listado-detail div.container div.container-img {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+
+	section.listado-detail div.container div.conta-viemore {
+		width: 100%;
+	}
+
+	section.listado-detail div.container {
+		flex-direction: column;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+
+	section.listado-detail div.container div.conta-viemore div {
+		justify-content: center;
+	}
+
+	section.listado-detail div.container div.conta-viemore > p {
+		text-align: center;
+	}
+
+	section.listado-detail div.container div.conta-viemore a {
+		text-align: center;
+		display: block;
+	}
+
+
+	/************** SUMMER PAGE \ ************/
 
 }
 

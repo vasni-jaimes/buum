@@ -426,7 +426,8 @@ a.demo--current {
 
 .global-menu__item:hover {
 	/*color: var(--color-menu-hover);*/
-	color: #46BEDC;
+	text-decoration: underline;
+	color: #fff;
 }
 
 .global-menu__item.is-opened {
