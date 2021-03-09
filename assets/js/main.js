@@ -37,36 +37,44 @@ if (summer) {
 }
 
 
+const info_slider = document.querySelectorAll('.info-slider ul li');
+if (info_slider) {
+	for (var i = 0; i <= info_slider.length - 1; i++) {
+		info_slider[i].addEventListener('click', function(e) {
+			e.preventDefault();
+			let url = e.target.getAttribute('src');
+			window.location.href = url;
+		});
+	}
+}
+
+
 
 //EFECTO HOME H2 -(PRINCIPAL)
 $('section.slider-bumming .info-slider h2:nth-child(2)').hover(function(){
 	$(this).css('letter-spacing', '25px');
 	$(this).css('display', 'inline-block');
-	$(this).addClass('cambio');
+	$(this).addClass('cambioSummer');
 	$(this).prev().css({
 		'letterSpacing': '25px',
-		'color': '#D24D39',
+		'color': '#84CAFE',
 	});
 
-	// $('figure.one-img').fadeOut();
-	// $('figure.two-img').fadeIn();
-	$('figure.one-img').css("display", "none");
-	$('figure.summer').css("display", "block");
+
+	$('figure.one-img').stop().fadeOut();
+	$('figure.summer').stop().fadeIn();
 
 }, function(){
 
     $(this).css('letter-spacing', '0');
-    $(this).removeClass('cambio');
+    $(this).removeClass('cambioSummer');
 	$(this).prev().css({
 		'letterSpacing': '0',
 		'color': '#000',
 	});
 
-	// $('figure.one-img').fadeIn();
-	// $('figure.two-img').fadeOut();
-
-	$('figure.summer').css("display", "none");
-	$('figure.one-img').css("display", "block");
+	$('figure.summer').stop().fadeOut();
+	$('figure.one-img').stop().fadeIn();
 	
 });
 
@@ -79,33 +87,29 @@ $('section.slider-bumming .info-slider ul li.spring').hover(function(){
 	hh2.text("SPRING");
 	hh2.css('letter-spacing', '25px');
 	hh2.css('display', 'inline-block');
-	hh2.addClass('cambio');
+	hh2.addClass('cambioSpring');
 	hh2.prev().css({
 		'letterSpacing': '25px',
-		'color': '#D24D39',
+		'color': '#F3CA3E',
 	});
 
-	// $('figure.one-img').fadeOut();
-	// $('figure.two-img').fadeIn();
-	$('figure.one-img').css("display", "none");
-	$('figure.two-img').css("display", "block");
+	$('figure.one-img').stop().fadeOut();
+	$('figure.two-img').stop().fadeIn();
 
 }, function(){
 
 	let hh2 = $('section.slider-bumming .info-slider h2:nth-child(2)');
 	hh2.text("SUMMER");
     hh2.css('letter-spacing', '0');
-    hh2.removeClass('cambio');
+    hh2.removeClass('cambioSpring');
 	hh2.prev().css({
 		'letterSpacing': '0',
 		'color': '#000',
 	});
 
-	// $('figure.one-img').fadeIn();
-	// $('figure.two-img').fadeOut();
 
-	$('figure.two-img').css("display", "none");
-	$('figure.one-img').css("display", "block");
+	$('figure.two-img').stop().fadeOut();
+	$('figure.one-img').stop().fadeIn();
 });
 
 
@@ -116,34 +120,29 @@ $('section.slider-bumming .info-slider ul li.summer').hover(function(){
 	hh2.text("SUMMER");
 	hh2.css('letter-spacing', '25px');
 	hh2.css('display', 'inline-block');
-	hh2.addClass('cambio');
+	hh2.addClass('cambioSummer');
 	hh2.prev().css({
 		'letterSpacing': '25px',
-		'color': '#D24D39',
+		'color': '#84CAFE',
 	});
 
-	// $('figure.one-img').fadeOut();
-	// $('figure.summer').fadeIn();
-
-	$('figure.one-img').css("display", "none");
-	$('figure.summer').css("display", "block");
+	$('figure.one-img').stop().fadeOut();
+	$('figure.summer').stop().fadeIn();
 
 }, function(){
 	let hh2 = $('section.slider-bumming .info-slider h2:nth-child(2)');
 
 	hh2.text("SPRING");
     hh2.css('letter-spacing', '0');
-    hh2.removeClass('cambio');
+    hh2.removeClass('cambioSummer');
 	hh2.prev().css({
 		'letterSpacing': '0',
 		'color': '#000',
 	});
 
-	// $('figure.one-img').fadeIn();
-	// $('figure.summer').fadeOut();
 
-	$('figure.summer').css("display", "none");
-	$('figure.one-img').css("display", "block");
+	$('figure.summer').stop().fadeOut();
+	$('figure.one-img').stop().fadeIn();
 	
 });
 
@@ -157,17 +156,15 @@ $('section.slider-bumming .info-slider ul li.fall').hover(function(){
 	hh2.text("FALL");
 	hh2.css('letter-spacing', '25px');
 	hh2.css('display', 'block');
-	hh2.addClass('cambio');
+	hh2.addClass('cambioFall');
 	hh2.prev().css({
 		'letterSpacing': '25px',
-		'color': '#D24D39',
+		'color': '#C16127',
 	});
 
-	// $('figure.one-img').fadeOut();
-	// $('figure.fall').fadeIn();
 
-	$('figure.one-img').css("display", "none");
-	$('figure.fall').css("display", "block");
+	$('figure.one-img').stop().fadeOut();
+	$('figure.fall').stop().fadeIn();
 
 }, function(){
 	let hh2 = $('section.slider-bumming .info-slider h2:nth-child(2)');
@@ -175,17 +172,15 @@ $('section.slider-bumming .info-slider ul li.fall').hover(function(){
 	hh2.text("SUMMER");
     hh2.css('letter-spacing', '0');
     hh2.css('display', 'inline-block');
-    hh2.removeClass('cambio');
+    hh2.removeClass('cambioFall');
 	hh2.prev().css({
 		'letterSpacing': '0',
 		'color': '#000',
 	});
 
-	// $('figure.one-img').fadeIn();
-	// $('figure.fall').fadeOut();
 
-	$('figure.fall').css("display", "none");
-	$('figure.one-img').css("display", "block");
+	$('figure.fall').stop().fadeOut();
+	$('figure.one-img').stop().fadeIn();
 	
 });
 
@@ -198,34 +193,29 @@ $('section.slider-bumming .info-slider ul li.winter').hover(function(){
 	hh2.text("WINTER");
 	hh2.css('letter-spacing', '25px');
 	hh2.css('display', 'inline-block');
-	hh2.addClass('cambio');
+	hh2.addClass('cambioWinter');
 	hh2.prev().css({
 		'letterSpacing': '25px',
-		'color': '#D24D39',
+		'color': '#5F6166',
 	});
 
-	// $('figure.one-img').fadeOut();
-	// $('figure.winter').fadeIn();
 
-	$('figure.one-img').css("display", "none");
-	$('figure.winter').css("display", "block");
+	$('figure.one-img').stop().fadeOut();
+	$('figure.winter').stop().fadeIn();
 
 }, function(){
 	let hh2 = $('section.slider-bumming .info-slider h2:nth-child(2)');
 
 	hh2.text("SUMMER");
     hh2.css('letter-spacing', '0');
-    hh2.removeClass('cambio');
+    hh2.removeClass('cambioWinter');
 	hh2.prev().css({
 		'letterSpacing': '0',
 		'color': '#000',
 	});
 
-	// $('figure.one-img').fadeIn();
-	// $('figure.winter').fadeOut();
-
-	$('figure.winter').css("display", "none");
-	$('figure.one-img').css("display", "block");
+	$('figure.winter').stop().fadeOut();
+	$('figure.one-img').stop().fadeIn();
 	
 });
 
