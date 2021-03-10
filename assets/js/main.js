@@ -57,7 +57,7 @@ $('section.slider-bumming .info-slider h2:nth-child(2)').hover(function(){
 	$(this).addClass('cambioSummer');
 	$(this).prev().css({
 		'letterSpacing': '25px',
-		'color': '#84CAFE',
+		'color': '#D24D39',
 	});
 
 
@@ -90,7 +90,7 @@ $('section.slider-bumming .info-slider ul li.spring').hover(function(){
 	hh2.addClass('cambioSpring');
 	hh2.prev().css({
 		'letterSpacing': '25px',
-		'color': '#F3CA3E',
+		'color': '#D24D39',
 	});
 
 	$('figure.one-img').stop().fadeOut();
@@ -123,7 +123,7 @@ $('section.slider-bumming .info-slider ul li.summer').hover(function(){
 	hh2.addClass('cambioSummer');
 	hh2.prev().css({
 		'letterSpacing': '25px',
-		'color': '#84CAFE',
+		'color': '#D24D39',
 	});
 
 	$('figure.one-img').stop().fadeOut();
@@ -159,7 +159,7 @@ $('section.slider-bumming .info-slider ul li.fall').hover(function(){
 	hh2.addClass('cambioFall');
 	hh2.prev().css({
 		'letterSpacing': '25px',
-		'color': '#C16127',
+		'color': '#D24D39',
 	});
 
 
@@ -196,7 +196,7 @@ $('section.slider-bumming .info-slider ul li.winter').hover(function(){
 	hh2.addClass('cambioWinter');
 	hh2.prev().css({
 		'letterSpacing': '25px',
-		'color': '#5F6166',
+		'color': '#D24D39',
 	});
 
 
