@@ -779,6 +779,233 @@ section.menu-estaciones div ul li.active a::before {
 /************** SUMMER PAGE \ ************/
 
 
+
+
+
+
+
+/************** EAT -- WHERE  ************/
+
+section.eat_titulo {
+	margin-top: 84px;
+	margin-bottom: 200px;
+}
+
+section.eat_titulo .container {
+	position: relative;
+	clip-path: polygon(100% 0px, 0px 0px, -2px 92.56%, 0.83% 92.26%, 1.83% 91.9%, 2.92% 91.53%, 4.33% 91.09%, 5.75% 90.71%, 7.25% 90.35%, 8.75% 89.92%, 10.16% 89.64%, 11.67% 89.36%, 13% 89.16%, 14.08% 88.97%, 15.25% 88.8%, 16.58% 88.62%, 17.92% 88.47%, 19.17% 88.33%, 20.33% 88.2%, 21.58% 88.16%, 22.83% 88.11%, 23.92% 88.07%, 25.17% 88.09%, 26.67% 88.12%, 27.75% 88.16%, 28.92% 88.2%, 30.17% 88.3%, 31.34% 88.38%, 32.59% 88.45%, 34% 88.59%, 35.33% 88.71%, 36.75% 88.90%, 38.16% 89.18%, 39.5% 89.4%, 40.67% 89.67%, 41.66% 89.89%, 42.58% 90.11%, 43.5% 90.36%, 44.5% 90.68%, 45.67% 91%, 46.83% 91.31%, 47.92% 91.63%, 48.83% 91.88%, 49.67% 92.18%, 50.67% 92.48%, 51.67% 92.77%, 52.58% 93.08%, 53.42% 93.38%, 54.25% 93.69%, 55.17% 93.95%, 56.17% 94.28%, 57.16% 94.6%, 58.17% 94.96%, 59.08% 95.29%, 60% 95.65%, 60.92% 95.97%, 61.84% 96.3%, 62.67% 96.55%, 63.67% 96.88%, 64.66% 97.22%, 65.59% 97.49%, 66.49% 97.75%, 67.41% 97.96%, 68.25% 98.17%, 69.17% 98.42%, 70.17% 98.67%, 71% 98.84%, 71.92% 99.05%, 73.08% 99.24%, 74.08% 99.44%, 75.09% 99.6%, 76% 99.71%, 76.91% 99.84%, 77.83% 99.87%, 78.83% 99.96%, 79.92% 99.98%, 81% 99.99%, 82.08% 99.93%, 83.08% 99.87%, 84% 99.81%, 84.92% 99.68%, 85.83% 99.54%, 86.83% 99.34%, 87.74% 99.11%, 88.58% 98.92%, 89.5% 98.62%, 90.33% 98.34%, 91.17% 98.07%, 92.08% 97.68%, 92.92% 97.33%, 93.59% 96.98%, 94.33% 96.63%, 95.08% 96.19%, 95.74% 95.77%, 96.41% 95.29%, 97% 94.93%, 97.5% 94.59%, 98.08% 94.17%, 98.75% 93.77%, 99.33% 93.34%, 100% 92.89%);
+}
+
+section.eat_titulo .container figure.eat-img {
+	position: relative;
+}
+
+section.eat_titulo .container figure.eat-img .lienzo {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	padding-top: 19%;
+	padding-left: 16%;
+}
+
+section.eat_titulo .container figure.eat-img .lienzo p {
+	color: #FFF;
+	font-family: "Helvetica 55 Roman";
+	font-size: 40px;
+	letter-spacing: 22px;
+	line-height: 59px;
+}
+
+section.eat_titulo .container figure.eat-img .lienzo p.first {
+	margin-bottom: 30px;
+}
+
+section.eat_titulo .container figure.eat-img .lienzo div.container-last {
+	margin-bottom: 155px;
+	background: #D24D39;
+	padding-left: 10px;
+	height: 55px;
+	width: 60%;
+}
+
+section.eat_titulo .container figure.eat-img .lienzo h1 {
+	color: #FFF;
+	font-family: "Helvetica 65 Medium";
+	font-size: 70px;
+	letter-spacing: 30px;
+	line-height: 85px;
+	text-align: justify;
+	margin-bottom: 100px;
+}
+
+section.eat_titulo .container figure.eat-img .lienzo figure.forch-logo {
+	height: 18px;
+	width: 310px;
+}
+
+
+
+section.eat-description .container {
+	max-width: 900px;
+}
+
+section.eat-description .titulo-platillo {
+	margin-bottom: 100px;
+}
+
+section.eat-description .titulo-platillo h2 {
+	color: #000;
+	font-family: "Helvetica 65 Medium";
+	font-size: 30px;
+	font-weight: 700;
+	letter-spacing: 18px;
+	line-height: 40px;
+	text-transform: uppercase;
+	width: 50%;
+}
+
+section.eat-description .container.titulo-platillo p {
+	color: #000;
+	font-family: "Helvetica 55 Roman";
+	font-size: 15px;
+	text-align: justify;
+}
+
+section.eat-description .container.titulo-platillo p, 
+section.eat-description .container.eat-platillo p {
+	width: 40%;
+}
+
+section.eat-description .titulo-platillo {
+	justify-content: flex-start;
+}
+
+section.eat-description .eat-platillo {
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 150px;
+}
+
+
+section.eat-description .eat-platillo figure {
+	width: 50%;
+}
+
+
+section.eat-description .container-fundador {
+	justify-content: center;
+	margin-bottom: 200px;
+}
+
+section.eat-description .container .eat-fundador {
+	width: 50%;
+	position: relative;
+	padding-left: 75px;
+}
+
+section.eat-description .container .eat-fundador h2 {
+	color: #000;
+	font-family: "Helvetica 55 Roman";
+	font-size: 27px;
+	font-style: italic;
+	line-height: 41px;
+	text-align: justify;
+}
+
+section.eat-description .container .eat-fundador figure {
+	position: absolute;
+	left: 35px;
+	top: -71px;
+}
+
+section.eat-description .container .eat-fundador div p {
+	color: #000;
+	font-family: "Helvetica 55 Roman";
+	font-size: 18px;
+	font-style: italic;
+	line-height: 21px;
+	text-align: justify;
+	width: auto;
+}
+
+section.eat-description .container .eat-fundador div {
+	display: flex;
+	align-items: center;
+}
+
+section.eat-description .container .eat-fundador div div {
+	width: 170px;
+	height: 1px;
+	border: 1px solid #000;
+	margin-right: 10px;
+}
+
+section.eat-description .container .eat-localizacion {
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+section.eat-description .container .eat-localizacion p {
+	width: auto;
+	color: #000;
+	font-family: "Helvetica 55 Roman";
+	font-size: 27px;
+	line-height: 45px;
+	text-align: justify;
+}
+
+section.eat-description .container .eat-localizacion i {
+	margin-right: 40px;
+}
+
+section.eat-description .container-tabs div {
+	width: 205px;
+}
+
+section.eat-description .container-tabs div.active-border {
+	border-top: 1px solid #000;
+	border-right: 1px solid #000; 
+}
+
+section.eat-description .container-tabs a {
+	color: #000;
+	font-family: "Helvetica 55 Roman";
+	font-size: 26px;
+	line-height: 56px;
+	text-align: center;
+	display: block;
+}
+
+section.eat-description .container-tabs {
+	justify-content: center;
+}
+
+
+section.eat-description {
+	margin-bottom: 50px;
+}
+
+/************** EAT -- WHERE \ ************/
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
 	section.programs .container div.imagenes-programs figure {
 		margin-bottom: 40px;
@@ -1204,6 +1431,30 @@ section.menu-estaciones div ul li.active a::before {
 
 
 	/************** SUMMER PAGE \ ************/
+
+
+
+	/************** EAT -- WHERE  ************/
+
+
+	section.eat-description .titulo-platillo h2 {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+
+	section.eat-description .container.titulo-platillo p {
+		width: 100%;
+	}
+
+
+	section.eat-description .titulo-platillo {
+		flex-direction: column;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+
+	/************** EAT -- WHERE \  ************/
 
 }
 
