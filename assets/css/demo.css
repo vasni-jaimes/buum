@@ -385,6 +385,11 @@ a.demo--current {
 	margin: 0.25em 0;
 	transition: transform 0.3s, opacity 0.3s;
 	transition-timing-function: ease-in;
+	text-transform: uppercase;
+}
+
+.submenu__demo3 {
+	padding-left: 70px;
 }
 
 .global-menu__item--demo-2:nth-child(odd) {

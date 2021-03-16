@@ -169,11 +169,26 @@ section.logo_titulo .container figure.letras-blancas {
 	transform: translateX(-50%);
 }
 
-
-section.logo_titulo .container figure.titulo-img img {
-	height: 100%;
+section.logo_titulo .container figure.letras-blancas img.desktop {
+	display: block;
 }
 
+section.logo_titulo .container figure.letras-blancas img.mobile {
+	display: none;
+}
+
+section.logo_titulo .container figure.titulo-img {
+	width: 100%;
+}
+
+
+section.logo_titulo .container figure.titulo-img img.desktop {
+	display: block;
+}
+
+section.logo_titulo .container figure.titulo-img img.mobile {
+	display: none;
+}
 
 
 /* SECCION 2 */
@@ -492,6 +507,10 @@ footer .info-contacto div figure  {
 	width: 75px;
 }
 
+footer .info-contacto div.ig-contact span {
+	margin-right: 74px;
+}
+
 footer .info-contacto div.ig-contact a {
 	letter-spacing: 7px;
 } 
@@ -499,15 +518,13 @@ footer .info-contacto div.ig-contact a {
 
 footer .info-contacto div span {
 	margin-right: 70px;
+	color: #D24D39;
 }
 
 footer .info-contacto div.first span {
-	margin-right: 68px;
+	margin-right: 64px;
 }
 
-footer .info-contacto div span {
-	color: #D24D39;
-}
 
 footer .info-contacto div a {
 	color: #5B5B5B;
@@ -723,6 +740,7 @@ section.listado-detail div.container div.conta-viemore > p {
 	font-size: 16px;
 	line-height: 29px;
 	margin-bottom: 25px;
+	text-transform: uppercase;
 }
 
 section.listado-detail div.container div.conta-viemore a {
@@ -1119,6 +1137,7 @@ a.web-site {
 
 	footer .info-contacto div a {
 		font-size: 25px;
+		text-transform: uppercase;
 	}
 
 	footer .img-info_contacto .banda-social {
@@ -1187,6 +1206,10 @@ a.web-site {
 		padding-right: 20px;
 	}
 
+	header .container a figure {
+		width: 70%;
+	}
+
 
 	/* SECCION 1 */
 
@@ -1199,21 +1222,35 @@ a.web-site {
 		transform: translate(-50%, -10%);
 	}
 
+	section.logo_titulo .container figure.letras-blancas img.desktop {
+		display: none
+	}
+
+	section.logo_titulo .container figure.letras-blancas img.mobile {
+		display: block;
+	}
 
 	section.travel_agency div.curva h2.subtitle-two::before {
-		display: none;
+		top: 30px;
+		left: 10px;
+		width: 15%;
 	}
 
 	section.travel_agency div.curva p {
 		padding: 0;
-		font-size: 16px;
+		font-size: 18px;
 		display: flex;
 		justify-content: flex-start;
+		text-transform: uppercase;
+	}
+
+	section.travel_agency div.curva p br {
+		display: none;
 	}
 
 	section.travel_agency div.curva h2.subtitle-two {
 		padding: 0;
-		text-align: left;
+		text-align: right;
 	}
 
 	section.travel_agency div.curva h2 {
@@ -1223,6 +1260,14 @@ a.web-site {
 
 	section.travel_agency div.curva p.first-child::before {
 		display: none;
+	}
+
+	section.logo_titulo .container figure.titulo-img img.desktop {
+		display: none;
+	}
+
+	section.logo_titulo .container figure.titulo-img img.mobile {
+		display: block;
 	}
 
 
@@ -1249,6 +1294,7 @@ a.web-site {
 	section.slider-bumming {
 		padding-left: 20px;
 		padding-right: 20px;
+		margin-bottom: 300px;
 	}
 
 	section.slider-bumming .info-slider h2 {
@@ -1277,23 +1323,25 @@ a.web-site {
 		width: 100%;
 		text-align: center;
 		margin-bottom: 60px;
+		margin-top: -50px;
 	}
 
 	section.programs .container .titulo-programs figure {
 		width: 100%;
 		position: relative;
-		top: 0;
+		top: -115px;
 	}
 
 	section.programs .container div.titulo-programs {
-		flex-direction: column;
+		flex-direction: column-reverse;
+		margin-bottom: 80px;
 	}
 
 	section.programs .container {
 		padding: 0;
 		padding-left: 20px;
 		padding-right: 20px;
-		padding-top: 40px;
+		/*padding-top: 40px;*/
 	}
 
 
@@ -1317,11 +1365,21 @@ a.web-site {
 	footer .info-contacto {
 		width: 100%;
 		margin-bottom: 70px;
+		margin: 0 auto;
 	}
 
 	footer .img-info_contacto {
 		width: 100%;
 		position: relative;
+	}
+
+	footer .info-contacto {
+		padding-left: 50px;
+		padding-right: 20px;
+	}
+
+	footer .info-contacto div {
+		justify-content: flex-start;
 	}
 
 	footer .img-info_contacto figure.first {
@@ -1336,8 +1394,10 @@ a.web-site {
 		margin: 0 auto;
 	}
 
+
 	footer .info-contacto div a {
-		font-size: 25px;
+		font-size: 20px;
+		text-transform: uppercase;
 	}
 
 	footer .img-info_contacto .banda-social {
@@ -1346,7 +1406,19 @@ a.web-site {
 	}
 
 	footer .info-contacto div.ig-contact a {
-		letter-spacing: 6px;
+		letter-spacing: 3px;
+	}
+
+	footer .info-contacto div.first span {
+		margin-right: 36px;
+	}
+
+	footer .info-contacto div.ig-contact span {
+		margin-right: 36px;
+	}
+
+	footer .info-contacto div span {
+		margin-right: 36px;
 	}
 
 
@@ -1382,6 +1454,11 @@ a.web-site {
 
 	section.titulo-estacion div.titulo p {
 		font-size: 16px;
+		text-transform: uppercase;
+	}
+
+	section.titulo-estacion div.titulo p br {
+		display: none;
 	}
 
 	section.titulo-estacion div.titulo h1::before {
@@ -1397,7 +1474,6 @@ a.web-site {
 
 	section.listado-detail div.container div.container-img {
 		width: 100%;
-		margin-bottom: 50px;
 	}
 
 	section.listado-detail div.container div.conta-viemore {
@@ -1427,15 +1503,15 @@ a.web-site {
 
 	section.listado-detail div.container div.conta-viemore div p.ultimo {
 		padding-right: 30px;
-		font-size: 22px;
+		font-size: 14px;
 	}
 
 	section.listado-detail div.container div.conta-viemore div h2 {
-		font-size: 40px;
+		font-size: 37px;
 	}
 
 	section.listado-detail div.container div.conta-viemore div p {
-		font-size: 22px;
+		font-size: 14px;
 	}
 
 
@@ -1496,6 +1572,7 @@ a.web-site {
 	section.eat-description .container.titulo-platillo p {
 		width: 100%;
 		font-size: 16px;
+		text-transform: uppercase;
 	}
 
 
@@ -1522,6 +1599,7 @@ a.web-site {
 	section.eat-description .container.eat-platillo p {
 		width: 100%;
 		font-size: 16px;
+		text-transform: uppercase;
 	}
 
 
@@ -1544,6 +1622,19 @@ a.web-site {
 		display: none;
 	}
 
+	section.eat-description .container .eat-localizacion p {
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+
+	section.eat-description .container .eat-fundador {
+		padding-left: 45px;
+	}
+
+	section.eat-description .container .eat-fundador h2 {
+		text-align: left;
+		font-size: 20px;
+	}
 
 	/************** EAT -- WHERE \  ************/
 
@@ -1552,6 +1643,9 @@ a.web-site {
 
 @media only screen and (max-width: 320px) {
 
+	section.travel_agency div.curva h2.subtitle-two::before {
+		display: none;
+	}
 }
 
 
