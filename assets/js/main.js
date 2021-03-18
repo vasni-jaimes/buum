@@ -224,13 +224,53 @@ $('section.slider-bumming .info-slider ul li.winter').hover(function(){
 
 const li_spring = document.querySelector('li.spring');
 if (li_spring) {
-	console.log('dss');
-	$('li.spring').mousedown(function(e) {
-		console.log('sss');
-		let x = e.clientX,
-			y = e.clientY;
+	$('li.spring').on('touchstart', function(e) {
+		let touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
+        let x = touch.pageX;
+        let y = touch.pageY;
+
+		// let x = e.touches[0].clientX;
+		// let y = e.touches[0].clientY;
 		$('.efect-mobile').css('left', x+'px');
 		$('.efect-mobile').css('top', y+'px');
+
+		$('.efect-mobile').addClass('efect-active');
+
+		//cambiar imagen
+
+		let hh2 = $('section.slider-bumming .info-slider h2:nth-child(2)');
+
+		hh2.text("SPRING");
+		hh2.css('letter-spacing', '25px');
+		hh2.css('display', 'inline-block');
+		hh2.addClass('cambioSpring');
+		hh2.prev().css({
+			'letterSpacing': '25px',
+			'color': '#D24D39',
+		});
+
+		$('figure.one-img').stop().fadeOut(400);
+		$('figure.two-img').stop().fadeIn(400);
+
+	});
+
+
+	$('li.spring').on('touchend', function(e) {
+		$('.efect-mobile').removeClass('efect-active');
+
+		//code
+		let hh2 = $('section.slider-bumming .info-slider h2:nth-child(2)');
+		hh2.text("SUMMER");
+	    hh2.css('letter-spacing', '0');
+	    hh2.removeClass('cambioSpring');
+		hh2.prev().css({
+			'letterSpacing': '0',
+			'color': '#000',
+		});
+
+
+		$('figure.two-img').stop().fadeOut(400);
+		$('figure.one-img').stop().fadeIn(400);
 	});
 }
 
