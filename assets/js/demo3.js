@@ -91,11 +91,6 @@ class ShapeOverlays {
     overlay.toggle();
     if (overlay.isOpened === true) {
 
-      let categorias = document.querySelector('div.portafolio-container div.categorias');
-        if (categorias) {
-          categorias.style.zIndex = "3";
-        }
-
       elmHamburger.classList.add('is-opened-navi');
       for (var i = 0; i < gNavItems.length; i++) {
         gNavItems[i].classList.add('is-opened');
@@ -105,12 +100,6 @@ class ShapeOverlays {
       for (var i = 0; i < gNavItems.length; i++) {
         gNavItems[i].classList.remove('is-opened');
       }
-
-      let categorias = document.querySelector('div.portafolio-container div.categorias');
-      if (categorias) {
-        setTimeout(function(){ categorias.style.zIndex = "5"; }, 500);
-      }
-
     }
   });
 
@@ -118,7 +107,13 @@ class ShapeOverlays {
 
   for (var i = 0; i <= itemsnav.length - 1; i++) {
     
-    itemsnav[i].addEventListener('click', () => {
+    itemsnav[i].addEventListener('click', (e) => {
+
+      if ($(e.target).hasClass('submenu__demo--padre3')) {
+        e.preventDefault();
+        $('ul').fadeToggle(300);
+        return false;
+      }
 
       //MEDIA QUERY
       var mediaqueryList = window.matchMedia("(min-width: 767px)");

@@ -152,6 +152,22 @@ header nav a {
 }
 
 
+ul {
+	display: none;
+}
+
+
+/* EFECTO TEMPORAL */
+	
+	.efect-mobile {
+		width: 10px;
+		height: 10px;
+		background: red;
+		border-radius: 50%;
+		position: absolute;
+	}
+		
+/* EFECTO TEMPORAL */
 
 
 /* SECCION 1 */
@@ -209,6 +225,7 @@ section.travel_agency div.curva {
 
 section.travel_agency div.curva figure {
 	max-width: 630px;
+	margin-bottom: 50px;
 }
 
 section.travel_agency div.curva h2 {
@@ -519,6 +536,7 @@ footer .info-contacto div.ig-contact a {
 footer .info-contacto div span {
 	margin-right: 70px;
 	color: #D24D39;
+	font-weight: 100;
 }
 
 footer .info-contacto div.first span {
@@ -740,7 +758,6 @@ section.listado-detail div.container div.conta-viemore > p {
 	font-size: 16px;
 	line-height: 29px;
 	margin-bottom: 25px;
-	text-transform: uppercase;
 }
 
 section.listado-detail div.container div.conta-viemore a {
@@ -1114,8 +1131,13 @@ a.web-site {
 	}
 
 	footer .info-contacto {
-		width: 100%;
+		min-width: 400px;
+		margin: 0 auto;
 		margin-bottom: 70px;
+	}
+
+	footer .info-contacto div {
+		justify-content: flex-start;
 	}
 
 	footer .img-info_contacto {
@@ -1211,6 +1233,16 @@ a.web-site {
 	}
 
 
+	.global-menu__item.is-opened {
+		line-height: 42px;
+	}
+
+	.global-menu__item {
+		font-size: 1.5rem !important;
+		letter-spacing: 0 !important;
+	}
+
+
 	/* SECCION 1 */
 
 	section.travel_agency {
@@ -1233,7 +1265,7 @@ a.web-site {
 	section.travel_agency div.curva h2.subtitle-two::before {
 		top: 30px;
 		left: 10px;
-		width: 15%;
+		width: 25%;
 	}
 
 	section.travel_agency div.curva p {
@@ -1242,6 +1274,7 @@ a.web-site {
 		display: flex;
 		justify-content: flex-start;
 		text-transform: uppercase;
+		font-size: 14px;
 	}
 
 	section.travel_agency div.curva p br {
@@ -1256,6 +1289,7 @@ a.web-site {
 	section.travel_agency div.curva h2 {
 		padding: 0;
 		text-align: left;
+		font-size: 26px;
 	}
 
 	section.travel_agency div.curva p.first-child::before {
@@ -1334,7 +1368,7 @@ a.web-site {
 
 	section.programs .container div.titulo-programs {
 		flex-direction: column-reverse;
-		margin-bottom: 80px;
+		margin-bottom: 20px;
 	}
 
 	section.programs .container {
@@ -1363,19 +1397,16 @@ a.web-site {
 	}
 
 	footer .info-contacto {
-		width: 100%;
-		margin-bottom: 70px;
+		min-width: 355px;
+		padding-left: 50px;
+		padding-right: 20px;
 		margin: 0 auto;
+		margin-bottom: 70px;
 	}
 
 	footer .img-info_contacto {
 		width: 100%;
 		position: relative;
-	}
-
-	footer .info-contacto {
-		padding-left: 50px;
-		padding-right: 20px;
 	}
 
 	footer .info-contacto div {
@@ -1452,8 +1483,9 @@ a.web-site {
 		display: inline-block;
 	}
 
+
 	section.titulo-estacion div.titulo p {
-		font-size: 16px;
+		font-size: 14px;
 		text-transform: uppercase;
 	}
 
@@ -1480,6 +1512,7 @@ a.web-site {
 		width: 100%;
 	}
 
+
 	section.listado-detail div.container {
 		flex-direction: column;
 		padding-right: 20px;
@@ -1493,6 +1526,8 @@ a.web-site {
 
 	section.listado-detail div.container div.conta-viemore > p {
 		text-align: left;
+		font-size: 14px;
+		text-transform: uppercase;
 	}
 
 	section.listado-detail div.container div.conta-viemore a {

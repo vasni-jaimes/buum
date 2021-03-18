@@ -220,4 +220,19 @@ $('section.slider-bumming .info-slider ul li.winter').hover(function(){
 });
 
 
+//EFECTO EN MOBILE
+
+const li_spring = document.querySelector('li.spring');
+if (li_spring) {
+	console.log('dss');
+	$('li.spring').mousedown(function(e) {
+		console.log('sss');
+		let x = e.clientX,
+			y = e.clientY;
+		$('.efect-mobile').css('left', x+'px');
+		$('.efect-mobile').css('top', y+'px');
+	});
+}
+
+
 
