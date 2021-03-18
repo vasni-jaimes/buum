@@ -242,12 +242,14 @@ if (li_spring) {
 
 		hh2.text("SPRING");
 		hh2.css('letter-spacing', '25px');
+		hh2.css('color', '#fff');
 		hh2.css('display', 'inline-block');
 		hh2.addClass('cambioSpring');
 		hh2.prev().css({
-			'letterSpacing': '25px',
+			'letterSpacing': '7px',
 			'color': '#D24D39',
 		});
+		$('.info-slider ul li').css('color', '#fff');
 
 		$('figure.one-img').stop().fadeOut(400);
 		$('figure.two-img').stop().fadeIn(400);
@@ -267,6 +269,7 @@ if (li_spring) {
 			'letterSpacing': '0',
 			'color': '#000',
 		});
+		$('.info-slider ul li').css('color', '#000');
 
 
 		$('figure.two-img').stop().fadeOut(400);

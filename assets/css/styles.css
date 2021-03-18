@@ -160,25 +160,23 @@ ul {
 /* EFECTO TEMPORAL */
 	
 	.efect-mobile {
-		width: 10px;
-		height: 10px;
+		width: 0.1px;
+		height: 0.1px;
 		background: #000;
 		border-radius: 50%;
 		position: absolute;
 		transform: translate(-50%, -50%);
 		mix-blend-mode: difference;
-		transition: width 1s, height 1s;
+		transition: width 1s, height 1s, opacity 1s;
 		outline: none;
 		user-select: none;
-		opacity: 0;
 	}
 
 	.efect-mobile.efect-active {
-		width: 2000px;
+		width: 1000px;
 		height: 1000px;
 		transition: 1s;
 		z-index: -1;
-		opacity: 1;
 	}
 		
 /* EFECTO TEMPORAL */
@@ -337,6 +335,7 @@ section.slider-bumming .info-slider h2.cambioSpring::before {
 	content: 'COMING SOON';
 	text-align: left;
 	padding-left: 20px;
+	font-size: 20px;
 }
 
 
