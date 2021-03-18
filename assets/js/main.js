@@ -142,10 +142,8 @@ $('section.slider-bumming .info-slider ul li.summer').hover(function(){
 
 
 	$('figure.summer').stop().fadeOut(400);
-	$('figure.one-img').stop().fadeIn(400);
-	
+	$('figure.one-img').stop().fadeIn(400);	
 });
-
 
 
 
@@ -181,7 +179,6 @@ $('section.slider-bumming .info-slider ul li.fall').hover(function(){
 
 	$('figure.fall').stop().fadeOut(400);
 	$('figure.one-img').stop().fadeIn(400);
-	
 });
 
 
@@ -216,11 +213,12 @@ $('section.slider-bumming .info-slider ul li.winter').hover(function(){
 
 	$('figure.winter').stop().fadeOut(400);
 	$('figure.one-img').stop().fadeIn(400);
-	
 });
 
 
-//EFECTO EN MOBILE
+
+//EFECTO EN MOBILE ----------------------------------------------------------------------------
+
 
 const li_spring = document.querySelector('li.spring');
 if (li_spring) {
@@ -234,7 +232,7 @@ if (li_spring) {
 		$('.efect-mobile').addClass('efect-active');
 
 		//cambiar imagen
-		
+
 		let hh2 = $('section.slider-bumming .info-slider h2:nth-child(2)');
 		hh2.text("SPRING");
 		hh2.css('letter-spacing', '25px');
@@ -266,7 +264,7 @@ if (li_spring) {
 
 		let hh2 = $('section.slider-bumming .info-slider h2:nth-child(2)');
 		hh2.text("FALL");
-		hh2.css('letter-spacing', '7px');
+		hh2.css('letter-spacing', '25px');
 		hh2.css('color', '#fff');
 		hh2.css('display', 'inline-block');
 		hh2.addClass('cambioFall');
@@ -289,7 +287,9 @@ if (li_spring) {
 		let hh2 = $('section.slider-bumming .info-slider h2:nth-child(2)');
 		hh2.text("SUMMER");
 	    hh2.css('letter-spacing', '0');
+	    hh2.css('color', '#000');
 	    hh2.removeClass('cambioSpring');
+	    hh2.removeClass('cambioFall');
 		hh2.prev().css({
 			'letterSpacing': '0',
 			'color': '#000',
@@ -309,7 +309,9 @@ if (li_spring) {
 		let hh2 = $('section.slider-bumming .info-slider h2:nth-child(2)');
 		hh2.text("SUMMER");
 	    hh2.css('letter-spacing', '0');
+	    hh2.css('color', '#000');
 	    hh2.removeClass('cambioSpring');
+	    hh2.removeClass('cambioFall');
 		hh2.prev().css({
 			'letterSpacing': '0',
 			'color': '#000',
