@@ -229,17 +229,13 @@ if (li_spring) {
         let x = touch.pageX;
         let y = touch.pageY;
 
-		// let x = e.touches[0].clientX;
-		// let y = e.touches[0].clientY;
 		$('.efect-mobile').css('left', x+'px');
 		$('.efect-mobile').css('top', y+'px');
-
 		$('.efect-mobile').addClass('efect-active');
 
 		//cambiar imagen
-
+		
 		let hh2 = $('section.slider-bumming .info-slider h2:nth-child(2)');
-
 		hh2.text("SPRING");
 		hh2.css('letter-spacing', '25px');
 		hh2.css('color', '#fff');
@@ -257,7 +253,36 @@ if (li_spring) {
 	});
 
 
-	$('li.spring').on('touchend', function(e) {
+	$('li.fall').on('touchstart', function(e) {
+		let touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
+        let x = touch.pageX;
+        let y = touch.pageY;
+
+		$('.efect-mobile').css('left', x+'px');
+		$('.efect-mobile').css('top', y+'px');
+		$('.efect-mobile').addClass('efect-active');
+
+		//cambiar imagen
+
+		let hh2 = $('section.slider-bumming .info-slider h2:nth-child(2)');
+		hh2.text("FALL");
+		hh2.css('letter-spacing', '7px');
+		hh2.css('color', '#fff');
+		hh2.css('display', 'inline-block');
+		hh2.addClass('cambioFall');
+		hh2.prev().css({
+			'letterSpacing': '7px',
+			'color': '#D24D39',
+		});
+		$('.info-slider ul li').css('color', '#fff');
+
+		$('figure.one-img').stop().fadeOut(400);
+		$('figure.fall').stop().fadeIn(400);
+
+	});
+
+
+	$('.info-slider ul li').on('touchend', function(e) {
 		$('.efect-mobile').removeClass('efect-active');
 
 		//code
@@ -277,7 +302,7 @@ if (li_spring) {
 	});
 
 
-	$('li.spring').on('touchcancel', function(e) {
+	$('.info-slider ul li').on('touchcancel', function(e) {
 		$('.efect-mobile').removeClass('efect-active');
 
 		//code

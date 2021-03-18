@@ -345,6 +345,7 @@ section.slider-bumming .info-slider h2.cambioSummer::before {
 	content: 'NEW';
 	text-align: left;
 	padding-left: 20px;
+	font-size: 20px;
 }
 
 section.slider-bumming .info-slider h2.cambioFall::before {
@@ -353,6 +354,7 @@ section.slider-bumming .info-slider h2.cambioFall::before {
 	content: 'COMING SOON';
 	text-align: left;
 	padding-left: 20px;
+	font-size: 20px;
 }
 
 section.slider-bumming .info-slider h2.cambioWinter::before {
@@ -361,6 +363,7 @@ section.slider-bumming .info-slider h2.cambioWinter::before {
 	content: 'COMING SOON';
 	text-align: left;
 	padding-left: 20px;
+	font-size: 20px;
 }
 
 
