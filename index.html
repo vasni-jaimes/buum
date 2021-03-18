@@ -227,6 +227,21 @@
 			
 			$(window).on('load', function() {
 				let travel = $(".travel_agency").offset().top;
+
+				//Cargar logo blanco al principio
+				// if ($(window).scrollTop() >= travel) {
+				// 	if (!$("header").hasClass("barda-menu")) {
+				// 		$("header").addClass("barda-menu");
+				// 	}
+				// }
+				// else {
+				// 	if ($("header").hasClass("barda-menu")) {
+				// 		$("header").removeClass("barda-menu");
+				// 	}
+				// }
+
+
+				//Resizo SCroll
 				$(window).scroll(function () {
 					if ($(window).scrollTop() >= travel) {
 						if (!$("header").hasClass("barda-menu")) {
