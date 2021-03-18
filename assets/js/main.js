@@ -79,8 +79,8 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 			});
 			$('.info-slider ul li').css('color', '#fff');
 
-			$('figure.one-img').stop().fadeOut(400);
-			$('figure.summer').stop().fadeIn(400);
+			$('.imagen-slider figure').fadeOut();
+			$('figure.summer').fadeIn();
 		});
 
 
@@ -108,8 +108,8 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 			});
 			$('.info-slider ul li').css('color', '#fff');
 
-			$('figure.one-img').stop().fadeOut(400);
-			$('figure.two-img').stop().fadeIn(400);
+			$('.imagen-slider figure').fadeOut();
+			$('figure.two-img').fadeIn();
 		});
 
 
@@ -129,7 +129,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 			hh2.text("FALL");
 			hh2.css('letter-spacing', '25px');
 			hh2.css('color', '#fff');
-			hh2.css('display', 'inline-block');
+			hh2.css('display', 'block');
 			hh2.addClass('cambioFall');
 			hh2.prev().css({
 				'letterSpacing': '7px',
@@ -137,8 +137,8 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 			});
 			$('.info-slider ul li').css('color', '#fff');
 
-			$('figure.one-img').stop().fadeOut(400);
-			$('figure.fall').stop().fadeIn(400);
+			$('.imagen-slider figure').fadeOut();
+			$('figure.fall').fadeIn();
 		});
 
 
@@ -166,8 +166,8 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 			});
 			$('.info-slider ul li').css('color', '#fff');
 
-			$('figure.one-img').stop().fadeOut(400);
-			$('figure.winter').stop().fadeIn(400);
+			$('.imagen-slider figure').fadeOut();
+			$('figure.winter').fadeIn();
 		});
 
 
@@ -195,8 +195,8 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 			});
 			$('.info-slider ul li').css('color', '#fff');
 
-			$('figure.one-img').stop().fadeOut(400);
-			$('figure.summer').stop().fadeIn(400);
+			$('.imagen-slider figure').fadeOut();
+			$('figure.summer').fadeIn();
 		});
 
 
@@ -220,8 +220,8 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 			$('.info-slider ul li').css('color', '#000');
 
 
-			$('figure.two-img').stop().fadeOut(400);
-			$('figure.one-img').stop().fadeIn(400);
+			$('.imagen-slider figure').fadeOut();
+			$('figure.one-img').fadeIn();
 		});
 
 
@@ -244,8 +244,8 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 			});
 
 
-			$('figure.two-img').stop().fadeOut(400);
-			$('figure.one-img').stop().fadeIn(400);
+			$('.imagen-slider figure').fadeOut();
+			$('figure.one-img').fadeIn();
 		});
 	}
 
