@@ -170,6 +170,7 @@ ul {
 		transition: width 1s, height 1s;
 		outline: none;
 		user-select: none;
+		opacity: 0;
 	}
 
 	.efect-mobile.efect-active {
@@ -177,6 +178,7 @@ ul {
 		height: 1000px;
 		transition: 1s;
 		z-index: -1;
+		opacity: 1;
 	}
 		
 /* EFECTO TEMPORAL */
