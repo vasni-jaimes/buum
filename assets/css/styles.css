@@ -162,12 +162,14 @@ ul {
 	.efect-mobile {
 		width: 10px;
 		height: 10px;
-		background: red;
+		background: #000;
 		border-radius: 50%;
 		position: absolute;
 		transform: translate(-50%, -50%);
 		mix-blend-mode: difference;
 		transition: width 1s, height 1s;
+		outline: none;
+		user-select: none;
 	}
 
 	.efect-mobile.efect-active {
@@ -409,6 +411,8 @@ section.slider-bumming .info-slider ul li {
 	line-height: 21px;
 	text-align: justify;
 	cursor: pointer;
+	outline: none;
+	user-select: none;
 }
 
 section.slider-bumming .info-slider ul li.list-sum {

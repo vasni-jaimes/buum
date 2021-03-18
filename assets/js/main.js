@@ -272,6 +272,25 @@ if (li_spring) {
 		$('figure.two-img').stop().fadeOut(400);
 		$('figure.one-img').stop().fadeIn(400);
 	});
+
+
+	$('li.spring').on('touchcancel', function(e) {
+		$('.efect-mobile').removeClass('efect-active');
+
+		//code
+		let hh2 = $('section.slider-bumming .info-slider h2:nth-child(2)');
+		hh2.text("SUMMER");
+	    hh2.css('letter-spacing', '0');
+	    hh2.removeClass('cambioSpring');
+		hh2.prev().css({
+			'letterSpacing': '0',
+			'color': '#000',
+		});
+
+
+		$('figure.two-img').stop().fadeOut(400);
+		$('figure.one-img').stop().fadeIn(400);
+	});
 }
 
 
