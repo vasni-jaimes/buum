@@ -304,13 +304,14 @@ section.slider-bumming .info-slider h2:first-child {
 	margin-bottom: 160px;
 }
 
-section.slider-bumming .info-slider h2:nth-child(2) {
+section.slider-bumming .info-slider h2.estacion-principal {
 	cursor: pointer;
 	margin-bottom: 35px;
 	display: inline-block;
+	user-select: none;
 }
 
-section.slider-bumming .info-slider h2:nth-child(2)::before {
+section.slider-bumming .info-slider h2.estacion-principal::before {
 	content: 'NEW';
 	position: absolute;
 	top: -50px;
@@ -383,6 +384,13 @@ section.slider-bumming .container .imagen-slider {
 	position: relative;
 }
 
+section.slider-bumming .container .imagen-slider.mobile {
+	display: none;
+}
+
+section.slider-bumming .container .imagen-slider.desktop {
+	display: block;
+}
 
 section.slider-bumming .container .imagen-slider figure {
 	position: absolute;
@@ -1343,6 +1351,15 @@ a.web-site {
 		position: relative;
 	}
 
+	section.slider-bumming .container .imagen-slider.mobile {
+		display: block;
+		margin-bottom: 145px;
+	}
+
+	section.slider-bumming .container .imagen-slider.desktop {
+		display: none;
+	}
+
 	section.slider-bumming {
 		padding-left: 20px;
 		padding-right: 20px;
@@ -1354,7 +1371,7 @@ a.web-site {
 	}
 
 	section.slider-bumming .info-slider h2:first-child {
-		margin-bottom: 120px;
+		margin-bottom: 20px;
 	}
 
 	section.slider-bumming .info-slider ul li.list-sum {
