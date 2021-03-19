@@ -59,12 +59,6 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 
 		//H2
 		$('section.slider-bumming .info-slider h2.estacion-principal').on('touchstart', function(e) {
-			let touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
-	        let x = touch.pageX;
-	        let y = touch.pageY;
-
-			$('.efect-mobile').css('left', x+'px');
-			$('.efect-mobile').css('top', y+'px');
 			$('.efect-mobile').addClass('efect-active');
 
 			//cambiar imagen
@@ -86,12 +80,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 
 		//LI
 		$('li.spring').on('touchstart', function(e) {
-			let touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
-	        let x = touch.pageX;
-	        let y = touch.pageY;
 
-			$('.efect-mobile').css('left', x+'px');
-			$('.efect-mobile').css('top', y+'px');
 			$('.efect-mobile').addClass('efect-active');
 
 			//cambiar imagen
@@ -115,12 +104,6 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 
 		//LI
 		$('li.fall').on('touchstart', function(e) {
-			let touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
-	        let x = touch.pageX;
-	        let y = touch.pageY;
-
-			$('.efect-mobile').css('left', x+'px');
-			$('.efect-mobile').css('top', y+'px');
 			$('.efect-mobile').addClass('efect-active');
 
 			//cambiar imagen
@@ -144,12 +127,6 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 
 		//LI
 		$('li.winter').on('touchstart', function(e) {
-			let touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
-	        let x = touch.pageX;
-	        let y = touch.pageY;
-
-			$('.efect-mobile').css('left', x+'px');
-			$('.efect-mobile').css('top', y+'px');
 			$('.efect-mobile').addClass('efect-active');
 
 			//cambiar imagen
@@ -173,12 +150,6 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 
 		//LI
 		$('li.summer').on('touchstart', function(e) {
-			let touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
-	        let x = touch.pageX;
-	        let y = touch.pageY;
-
-			$('.efect-mobile').css('left', x+'px');
-			$('.efect-mobile').css('top', y+'px');
 			$('.efect-mobile').addClass('efect-active');
 
 			//cambiar imagen
@@ -242,6 +213,8 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 				'letterSpacing': '0',
 				'color': '#000',
 			});
+
+			$('.info-slider ul li').css('color', '#000');
 
 
 			$('.imagen-slider.mobile figure').fadeOut();
