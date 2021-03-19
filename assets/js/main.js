@@ -73,8 +73,8 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 			});
 			$('.info-slider ul li').css('color', '#fff');
 
-			$('.imagen-slider.mobile figure').fadeOut();
-			$('.imagen-slider.mobile figure.summer').fadeIn();
+			$('.imagen-slider.mobile figure').hide();
+			$('.imagen-slider.mobile figure.summer').show();
 		});
 
 
@@ -97,8 +97,8 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 			});
 			$('.info-slider ul li').css('color', '#fff');
 
-			$('.imagen-slider.mobile figure').fadeOut();
-			$('.imagen-slider.mobile figure.two-img').fadeIn();
+			$('.imagen-slider.mobile figure').hide();
+			$('.imagen-slider.mobile figure.two-img').show();
 		});
 
 
@@ -120,8 +120,8 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 			});
 			$('.info-slider ul li').css('color', '#fff');
 
-			$('.imagen-slider.mobile figure').fadeOut();
-			$('.imagen-slider.mobile figure.fall').fadeIn();
+			$('.imagen-slider.mobile figure').hide();
+			$('.imagen-slider.mobile figure.fall').show();
 		});
 
 
@@ -143,8 +143,8 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 			});
 			$('.info-slider ul li').css('color', '#fff');
 
-			$('.imagen-slider.mobile figure').fadeOut();
-			$('.imagen-slider.mobile figure.winter').fadeIn();
+			$('.imagen-slider.mobile figure').hide();
+			$('.imagen-slider.mobile figure.winter').show();
 		});
 
 
@@ -166,8 +166,8 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 			});
 			$('.info-slider ul li').css('color', '#fff');
 
-			$('.imagen-slider.mobile figure').fadeOut();
-			$('.imagen-slider.mobile figure.summer').fadeIn();
+			$('.imagen-slider.mobile figure').hide();
+			$('.imagen-slider.mobile figure.summer').show();
 		});
 
 
@@ -191,8 +191,8 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 			$('.info-slider ul li').css('color', '#000');
 
 
-			$('.imagen-slider.mobile figure').fadeOut();
-			$('.imagen-slider.mobile figure.one-img').fadeIn();
+			$('.imagen-slider.mobile figure').hide();
+			$('.imagen-slider.mobile figure.one-img').show();
 		});
 
 
@@ -217,8 +217,8 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 			$('.info-slider ul li').css('color', '#000');
 
 
-			$('.imagen-slider.mobile figure').fadeOut();
-			$('.imagen-slider.mobile figure.one-img').fadeIn();
+			$('.imagen-slider.mobile figure').hide();
+			$('.imagen-slider.mobile figure.one-img').show();
 		});
 	}
 

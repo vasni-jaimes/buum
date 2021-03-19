@@ -1353,6 +1353,8 @@ a.web-site {
 
 	section.slider-bumming .container .imagen-slider figure {
 		position: relative;
+		width: 100%;
+		height: 100%;
 	}
 
 	section.slider-bumming .container .imagen-slider.mobile {
