@@ -312,6 +312,7 @@ section.slider-bumming .info-slider h2.estacion-principal {
 	margin-bottom: 35px;
 	display: inline-block;
 	user-select: none;
+	outline: none;
 }
 
 section.slider-bumming .info-slider h2.estacion-principal::before {
