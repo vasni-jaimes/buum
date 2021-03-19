@@ -99,6 +99,11 @@ header .hamburgesa-blanca::before {
 	background-color: #fff;
 }
 
+header .container a figure img.logo-home__n,
+header .container a figure img.logo-home__b {
+	display: none;
+}
+
 nav.active {
     visibility: visible;
     opacity: 1;
