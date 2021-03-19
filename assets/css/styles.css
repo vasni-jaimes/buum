@@ -94,6 +94,11 @@ nav {
     z-index: 9;
 }
 
+header .hamburgesa-blanca::after,
+header .hamburgesa-blanca::before {
+	background-color: #fff;
+}
+
 nav.active {
     visibility: visible;
     opacity: 1;
@@ -1353,8 +1358,6 @@ a.web-site {
 
 	section.slider-bumming .container .imagen-slider figure {
 		position: relative;
-		max-width: 300px;
-		max-height: 300px;
 	}
 
 	section.slider-bumming .container .imagen-slider.mobile {

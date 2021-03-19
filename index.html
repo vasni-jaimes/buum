@@ -14,7 +14,8 @@
 			<div class="container flex">
 				<a href="index.html">
 					<figure>
-						<img src="assets/img/logo.png">
+						<img class="logo-home__n" src="assets/img/logo.png">
+						<img class="logo-home__b" src="assets/img/logo-blanco.png">
 					</figure>
 				</a>
 				<div class="content content--demo-3">
@@ -248,16 +249,24 @@
 				let travel = $(".travel_agency").offset().top;
 
 				//Cargar logo blanco al principio
-				// if ($(window).scrollTop() >= travel) {
-				// 	if (!$("header").hasClass("barda-menu")) {
-				// 		$("header").addClass("barda-menu");
-				// 	}
-				// }
-				// else {
-				// 	if ($("header").hasClass("barda-menu")) {
-				// 		$("header").removeClass("barda-menu");
-				// 	}
-				// }
+				if ($(window).scrollTop() <= travel) {
+					if ($("header").hasClass("barda-menu")) {
+						$("header").removeClass("barda-menu");
+					}
+
+					$("header .container a figure img.logo-home__n").css('display', 'none');
+					$("header .container a figure img.logo-home__b").css('display', 'block');
+					$(".hamburger__line-in").addClass('hamburgesa-blanca');
+				}
+				else {
+					if (!$("header").hasClass("barda-menu")) {
+						$("header").addClass("barda-menu");
+					}
+
+					$("header .container a figure img.logo-home__n").css('display', 'block');
+					$("header .container a figure img.logo-home__b").css('display', 'none');
+					$(".hamburger__line-in").removeClass('hamburgesa-blanca');
+				}
 
 
 				//Resizo SCroll
@@ -265,11 +274,17 @@
 					if ($(window).scrollTop() >= travel) {
 						if (!$("header").hasClass("barda-menu")) {
 							$("header").addClass("barda-menu");
+							$("header .container a figure img.logo-home__n").css('display', 'block');
+							$("header .container a figure img.logo-home__b").css('display', 'none');
+							$(".hamburger__line-in").removeClass('hamburgesa-blanca');
 						}
 					}
 					else {
 						if ($("header").hasClass("barda-menu")) {
 							$("header").removeClass("barda-menu");
+							$("header .container a figure img.logo-home__n").css('display', 'none');
+							$("header .container a figure img.logo-home__b").css('display', 'block');
+							$(".hamburger__line-in").addClass('hamburgesa-blanca');
 						}
 					}
 				});
