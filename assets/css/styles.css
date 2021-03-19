@@ -1619,6 +1619,18 @@ a.web-site {
 
 	/************** EAT -- WHERE  ************/
 
+	section.eat_titulo {
+		margin-bottom: 100px;
+	}
+
+	section.eat_titulo .container figure.eat-img {
+		width: 100%;
+	}
+
+	section.eat_titulo .container figure.eat-img img {
+		height: 100vh;
+	}
+
 	section.eat_titulo .container figure.eat-img .lienzo {
 		padding-top: 0;
 		padding-left: 20px;
@@ -1680,6 +1692,8 @@ a.web-site {
 		width: 100%;
 		margin-bottom: 60px;
 	}
+
+
 
 	section.eat-description .container.eat-platillo p {
 		width: 100%;
