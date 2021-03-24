@@ -205,9 +205,10 @@ section.logo_titulo .container {
 
 section.logo_titulo .container figure.letras-blancas {
 	position: absolute;
-	bottom: 30%;
+	bottom: 32%;
 	left: 50%;
 	transform: translateX(-50%);
+	max-width: 300px;
 }
 
 section.logo_titulo .container figure.letras-blancas img.desktop {
